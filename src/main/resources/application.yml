@@ -4,6 +4,8 @@ spring:
   data:
     jdbc:
       dialect: maria
+  jpa:
+    open-in-view: false
 app:
   postgres:
     url: jdbc:postgresql://localhost:5432/postgres
