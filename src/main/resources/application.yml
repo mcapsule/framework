@@ -6,9 +6,9 @@ spring:
       dialect: maria
 app:
   postgres:
-    url: jdbc:mariadb://localhost:3306/mariadb
-    username: root
-    password: root
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
     testWhileIdle: true
     validationQuery: SELECT 1
   mariadb:
