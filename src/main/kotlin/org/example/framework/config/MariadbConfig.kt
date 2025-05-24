@@ -50,13 +50,4 @@ class MariadbConfig {
     ): PlatformTransactionManager {
         return JpaTransactionManager(entityManagerFactory)
     }
-
-//    @Bean
-//    fun entityManagerFactoryBuilder(jpaProperties: JpaProperties): EntityManagerFactoryBuilder {
-//        val adapter = HibernateJpaVendorAdapter()
-//        adapter.setShowSql(jpaProperties.isShowSql)
-//        adapter.setGenerateDdl(jpaProperties.isGenerateDdl)
-//        adapter.setDatabasePlatform(jpaProperties.databasePlatform)
-//        return EntityManagerFactoryBuilder(adapter, jpaProperties.properties, null)
-//    }
 }
